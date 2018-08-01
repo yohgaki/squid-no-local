@@ -9,6 +9,9 @@ RUN apk update \
 #RUN ln -sf /dev/stdout /var/log/squid/access.log  && \
 #    ln -sf /dev/stderr /var/log/squid/cache.log
 
+# Force log to stderr by access error
+RUN touch /var/log/squid/cache.log
+
 RUN squid -z
 
 COPY squid.conf /etc/squid/

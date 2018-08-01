@@ -22,3 +22,7 @@ Change your browser proxy setting point to the proxy.
 e.g. Set proxy IP address to 127.0.0.1 and port 3218
 
 
+# License
+
+MIT License
+
