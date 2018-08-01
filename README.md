@@ -11,10 +11,10 @@ If you have docker already,
 docker pull yohgaki/squid-no-local
 ```
 
-than
+then
 
 ```
-./start.sh
+docker run -d --rm -p 3218:3218 yohgaki/squid-no-local 
 ```
 
 Change your browser proxy setting point to the proxy.
